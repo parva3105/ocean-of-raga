@@ -1,0 +1,25 @@
+.about__head{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.3rem 8rem 0rem 8rem ;
+}
+
+.about__links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+@media screen and (max-width: 1024px){
+
+}
+
+@media screen and (max-width: 600px){
+    .about__head{
+        margin: 0;
+    }
+    .about__links{
+        display: none;
+    }
+}
