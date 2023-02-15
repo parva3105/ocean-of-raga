@@ -9,8 +9,6 @@ import Nav from '../ComponentsHome/NavBar/Nav'
 function HomePage() {
   return (
     <div className="App">
-      {/* <Header />
-      <About /> */}
       <Header />
       <About />
       <Nav />
