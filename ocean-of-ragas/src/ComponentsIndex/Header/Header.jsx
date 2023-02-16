@@ -3,6 +3,7 @@ import './style.css'
 import { FiUsers } from 'react-icons/fi'
 import { FiRefreshCw } from 'react-icons/fi'
 import { TfiYoutube } from 'react-icons/tfi'
+import AudioPlayer from '../AudioPlayer'
 
 
 const Header = () => {
@@ -16,12 +17,7 @@ const Header = () => {
                     <div className="info header__youtube"> <TfiYoutube /><a href='https://youtube.com' target="_blank">  See Demo On Youtube</a></div>
                 </div>
                 <div className="header__player">
-                    <div className=" info header__audio">Now Playing : 5_Hindol.mp3</div>
-                    <div className="header__player__control">
-                        <audio controls>
-                            <source src=""/>
-                        </audio>
-                    </div>
+                    <AudioPlayer />
                 </div>
             </div>
         </div>

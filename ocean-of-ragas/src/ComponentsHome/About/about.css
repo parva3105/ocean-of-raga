@@ -23,3 +23,8 @@
         display: none;
     }
 }
+
+button{
+    background: white;
+    border: none;
+}

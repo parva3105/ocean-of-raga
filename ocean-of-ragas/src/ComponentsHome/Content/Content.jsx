@@ -6,7 +6,7 @@ const Content = () => {
   return (
     <div>
       <div className='content__table'>
-        <table>
+        <table className='table__head'>
           <thead>
           <tr>
             <th>Name</th>
@@ -17,28 +17,28 @@ const Content = () => {
           </thead>
           <tbody>
           <tr>
-            <td><a href="">Asavri</a></td>
+            <td>Asavri</td>
             <td>T.K.Janorikar</td>
             <td>-</td>
-            <td><a href='../../Assets/songs/songs_Asavari_TDJanorikar.mp3' target="_blank"><GiSpeaker/></a></td>
+            <td><button id='asavri' className='player'><GiSpeaker/></button></td>
           </tr>
           <tr>
-            <td><a href="">Abheri</a></td>
+            <td>Abheri</td>
             <td>Rajesh Vaidya</td>
             <td>Veena</td> 
-            <td><a href='../../Assets/songs/songs_Abheri_RajeshVaidya_Veena.mp3' target="_blank"><GiSpeaker/></a></td>
+            <td><button id='abheri' className='player'><GiSpeaker/></button></td>
           </tr>
           <tr>
-            <td><a href="">AbheriTodi</a></td>
+            <td>AbheriTodi</td>
             <td>Ramashreya Jha</td>
             <td>-</td>
-            <td><a href='../../Assets/songs/songs_AbheriTodi_RamashreyaJha.mp3' target="_blank"><GiSpeaker/></a></td>
+            <td><button id='abheritodi' className='player'><GiSpeaker/></button></td>
           </tr>
           <tr>
-            <td><a href="">Abhogi</a></td>
+            <td>Abhogi</td>
             <td>Rajashri Mahajani</td>
             <td>-</td>
-            <td><a href='../../Assets/songs/songs_3_Abhogi_RajashreeMahajani.mp3' target="_blank"><GiSpeaker/></a></td>
+            <td><button id='abhogi' className='player'><GiSpeaker/></button></td>
           </tr>
           </tbody>
         </table>

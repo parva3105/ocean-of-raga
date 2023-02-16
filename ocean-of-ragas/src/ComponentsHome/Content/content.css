@@ -32,3 +32,17 @@ td > a{
 td > a:hover {
     color: #a2d9f3;
 }
+
+.player{
+    border: none;
+    background-color: white;
+}
+
+@media screen and (max-width : 600px) {
+    .content__table{
+        font-size: 14px;
+    }
+    td{
+        padding: 0.5rem;
+    }
+}

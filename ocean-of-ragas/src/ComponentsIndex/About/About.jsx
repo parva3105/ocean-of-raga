@@ -36,7 +36,7 @@ const About = () => {
             </div>
         </div>
 
-        <button onClick={ () => navigate("/home")} >Click Here</button>
+        <button className='home__page' onClick={ () => navigate("/home")} >Click Here</button>
 
 
     </div>
