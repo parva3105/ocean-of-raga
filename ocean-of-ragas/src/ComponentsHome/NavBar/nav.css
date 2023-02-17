@@ -8,6 +8,9 @@
     align-items: center;
     margin : 0rem 5rem 0rem 5rem;
 }
+.nav__bar{
+  display: block;
+}
 
 
 .dropbtn {
@@ -58,9 +61,20 @@
     }
 }
 
+.icon {
+  display: none;
+}
+
+
 @media screen and (max-width: 600px){
     .nav__elements{
       display: none;
+    }
+    .icon{
+      display: block;
+    }
+    .nav__bar{
+      align-items:end;
     }
 }
 

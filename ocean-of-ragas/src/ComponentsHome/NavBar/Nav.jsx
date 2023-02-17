@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <div>
         <div className="nav__head">
-            <div className="topnav nav__elements">
+            <div className="topnav nav__elements" id='myTopNav'>
                 <div className=" dropdown nav_intro">
                     <button className='dropbtn'>Introduction</button>
                     <div className="dropdown-content">
