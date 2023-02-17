@@ -2,10 +2,9 @@ import React from 'react'
 import logo from '../../Assets/Images/logo.png'
 import group_intruments from '../../Assets/Images/group-insturments1.jpg'
 import './about.css'
-import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const About = () => {
-    const navigate = useNavigate();
   return (
     <div>
         <div className="about__logo">
@@ -36,7 +35,7 @@ const About = () => {
             </div>
         </div>
 
-        <button className='home__page' onClick={ () => navigate("/home")} >Click Here</button>
+        <button className='home__page'><Link to="/home">Click Here</Link></button>
 
 
     </div>

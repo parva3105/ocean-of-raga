@@ -1,31 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import HomePage from './pages/HomePage';
-import IndexPage from './pages/IndexPage';
+import App from './App';
+// import './index.css';
+// import HomePage from './pages/HomePage';
+// import IndexPage from './pages/IndexPage';
 import reportWebVitals from './reportWebVitals';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Header from './ComponentsIndex/Header/Header';
+// import {
+//   createBrowserRouter,
+//   RouterProvider,
+// } from "react-router-dom";
+//import Header from './ComponentsIndex/Header/Header';
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <IndexPage />,
-  },
-  {
-    path : "/home",
-    element : <HomePage />,
-  }
-]);
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <IndexPage />,
+//   },
+//   {
+//     path : "/home",
+//     element : <HomePage />,
+//   }
+// ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Header />
-    <RouterProvider router={router} />
+    <App />
+    {/* <Header />
+    <RouterProvider router={router} /> */}
   </React.StrictMode>
 );
 

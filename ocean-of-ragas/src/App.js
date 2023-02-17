@@ -1,21 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import About from './ComponentsHome/About/About';
-import Header from './ComponentsHome/Header/Header';
-import Content from './ComponentsHome/Content/Content'
-import Footer from './ComponentsHome/Footer/Footer'
-import Nav from './ComponentsHome/NavBar/Nav'
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import IndexPage from './pages/IndexPage'
+import Header from './ComponentsIndex/Header/Header'
+import defaultSong from  '../src/Assets/songs/songs_Adbhutranjani_GoswamiGokulotsavmaharaj.mp3'
+import HomePage from './pages/HomePage';
 function App() {
-  return (
-    <div className="App">
-      <Header />
-      <About />
-      <Nav />
-      <Content />
-      <Footer />
-    </div>
-  );
+  const [src,setSrc] = useState(defaultSong)
+  let songName = src
+  return (<BrowserRouter>
+      <Header name={songName} />
+      <Routes>
+        <Route path='/' element={
+            <IndexPage 
+          />} />
+        <Route path='/home' element={
+            <HomePage src={src} setSrc={setSrc} />
+          } />
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App;
