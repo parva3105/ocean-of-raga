@@ -1,17 +1,20 @@
-import React from 'react';
-
+import React, { useState,useEffect } from 'react';
+import defaultSong from '../Assets/songs/songs_Adbhutranjani_GoswamiGokulotsavmaharaj.mp3'
 
 const AudioPlayer = ({path}) => {
+
+
+  const [pathName,setPathName] = useState(defaultSong) //  This Works        
+  // const [pathName,setPathName] = useState(path) //  This Won't Works        
   
-  const pathName = path
-  console.log(pathName);
-  
+
+
   return (
     <div className='header__player'>
         <div id='now-playing' className=" info header__audio">Now Playing : 5_Hindol.mp3  </div>
             <div id='audio-tag' className="header__player__control">
             <audio id='my-audio' autoPlay controls>
-                <source id='audio-source' src={pathName} type="audio/mpeg"/>
+                <source id='audio-source' src={pathName} type="audio/mp3"/>
             </audio>
         </div>
     </div>

@@ -1,9 +1,6 @@
 import React from 'react'
 import './content.css'
 import { GiSpeaker } from 'react-icons/gi'
-import song2 from '../../Assets/songs/songs_Abheri_RajeshVaidya_Veena.mp3'
-import song3 from '../../Assets/songs/songs_AbheriTodi_RamashreyaJha.mp3'
-import song4 from '../../Assets/songs/songs_3_Abhogi_RajashreeMahajani.mp3'
 
 const Content = ({src , setSrc}) => {
 
@@ -34,19 +31,19 @@ const Content = ({src , setSrc}) => {
             <td>Abheri</td>
             <td>Rajesh Vaidya</td>
             <td>Veena</td> 
-            <td><button id='songBtn abheri' value={song2} onClick={setSong} className='player'><GiSpeaker/></button></td>
+            <td><button id='songBtn abheri' value='../Assets/songs/songs_Abheri_RajeshVaidya_Veena.mp3' onClick={setSong} className='player'><GiSpeaker/></button></td>
           </tr>
           <tr>
             <td>AbheriTodi</td>
             <td>Ramashreya Jha</td>
             <td>-</td>
-            <td><button id='songBtn abheritodi' value={song3}onClick={setSong} className='player'><GiSpeaker/></button></td>
+            <td><button id='songBtn abheritodi' value='../Assets/songs/songs_AbheriTodi_RamashreyaJha.mp3' onClick={setSong} className='player'><GiSpeaker/></button></td>
           </tr>
           <tr>
             <td>Abhogi</td>
             <td>Rajashri Mahajani</td>
             <td>-</td>
-            <td><button id='songBtn abhogi' value={song4} onClick={setSong} className='player'><GiSpeaker/></button></td>
+            <td><button id='songBtn abhogi' value='../Assets/songs/songs_3_Abhogi_RajashreeMahajani.mp3' onClick={setSong} className='player'><GiSpeaker/></button></td>
           </tr>
           </tbody>
         </table>
