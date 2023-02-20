@@ -1,16 +1,10 @@
-import React, { useState } from 'react';
-import defaultSong from '../Assets/songs/songs_Adbhutranjani_GoswamiGokulotsavmaharaj.mp3'
+import React from 'react';
+
 
 const AudioPlayer = ({path}) => {
   
-  const [pathName,setPathName] = useState(defaultSong)
-  
-
-  if(path !== defaultSong){
-    console.log(path);
-  }
-  
-  
+  const pathName = path
+  console.log(pathName);
   
   return (
     <div className='header__player'>

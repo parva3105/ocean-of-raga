@@ -6,8 +6,9 @@ const Nav = () => {
   return (
     <div>
         <div className="nav__head">
+        <FaBars className='bars' />
             <div className="topnav nav__elements" id='myTopNav'>
-                <FaBars className='bars' />
+                
                 <div className=" dropdown nav_intro">
                     <button className='dropbtn'>Introduction</button>
                     <div className="dropdown-content">
