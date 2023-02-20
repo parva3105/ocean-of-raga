@@ -64,29 +64,39 @@
     }
 }
 
+
+
+
+/* Hide the Icon class by default */
 .icon {
   display: none;
-} 
+}
 
-
-@media screen and (max-width: 600px){
-  .nav__head{
-    display: flex;
-    justify-content: center;
+/* Show the Icon class when screen width is less than 600px */
+@media screen and (max-width: 600px) {
+  
+  .nav__elements {
+    display: none;
+    flex-direction: column;
+    align-items: center;
   }
-  .bars{
+  .dropdown {
+    margin-top: 20px;
+  }
+  .icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .icon:hover + .nav__elements  {
+    display: block;
+    transition: transform 0.2s ease-in-out;
+  }
+  .show-nav .dropdown-content {
     display: block;
   }
-  .nav__elements{
-    display: none
-  }
-  .bars:hover + .nav__elements {
-    display: list-item;
-    list-style: none;
-  }
-  .bars:hover + .nav__elements:hover {
-    display: list-item;
-    list-style: none;
-  }
 }
+
+/* Show the dropdown content when hovering over the dropdown */
+
 
