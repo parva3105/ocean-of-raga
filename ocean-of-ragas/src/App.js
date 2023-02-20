@@ -8,7 +8,9 @@ import HomePage from './pages/HomePage';
 function App() {
   const [src,setSrc] = useState(defaultSong)
   let songName = src
-  return (<BrowserRouter>
+  return (
+    <div className='App'>
+    <BrowserRouter>
       <Header name={songName} />
       <Routes>
         <Route path='/' element={
@@ -19,6 +21,7 @@ function App() {
           } />
       </Routes>
     </BrowserRouter>
+    </div>
   )
 }
 

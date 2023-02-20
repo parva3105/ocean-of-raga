@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './style.css'
 import { FiUsers } from 'react-icons/fi'
 import { FiRefreshCw } from 'react-icons/fi'
@@ -18,7 +18,7 @@ const Header = (name) => {
                     <div className="info header__youtube"> <TfiYoutube /><a href='https://youtube.com' target="_blank">  See Demo On Youtube</a></div>
                 </div>
                 <div className="header__player">
-                    <AudioPlayer  src={source} />
+                    <AudioPlayer  path={source} />
                 </div>
             </div>
         </div>

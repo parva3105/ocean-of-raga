@@ -7,7 +7,7 @@ import Nav from '../ComponentsHome/NavBar/Nav'
 
 function HomePage({src , setSrc}) {
   return (
-    <div className="App">
+    <div className='App'>
       <About />
       <Nav />
       <Content src={src} setSrc={setSrc} />

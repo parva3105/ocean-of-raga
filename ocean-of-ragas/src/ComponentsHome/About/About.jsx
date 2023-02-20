@@ -14,7 +14,7 @@ const About = () => {
         </div>
         <div className="about__links">
           <div className="link__home">
-          <AiOutlineHome /><Link to="/">Home</Link>
+          <AiOutlineHome /><Link to="/" className='home-link'>Home</Link>
           </div>
           <div className="link__sitemap">
           <FaSitemap /> SiteMap
