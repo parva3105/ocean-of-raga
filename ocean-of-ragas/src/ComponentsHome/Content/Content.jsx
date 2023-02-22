@@ -28,25 +28,25 @@ const Content = () => {
             <td>Asavri</td>
             <td>T.K.Janorikar</td>
             <td>-</td>
-            <td><button id='songBtn asavri' value='song1' onClick={setSong} className='player'>Play <GiSpeaker/></button></td>
+            <td><button id='songBtn asavri' value='Asavri' onClick={setSong} className='player'>Play <GiSpeaker/></button></td>
           </tr>
           <tr>
             <td>Abheri</td>
             <td>Rajesh Vaidya</td>
             <td>Veena</td> 
-            <td><button id='songBtn abheri' value='song2' onClick={setSong} className='player'>Play <GiSpeaker/></button></td>
+            <td><button id='songBtn abheri' value='Abheri' onClick={setSong} className='player'>Play <GiSpeaker/></button></td>
           </tr>
           <tr>
             <td>AbheriTodi</td>
             <td>Ramashreya Jha</td>
             <td>-</td>
-            <td><button id='songBtn abheritodi' value='song3' onClick={setSong} className='player'>Play <GiSpeaker/></button></td>
+            <td><button id='songBtn abheritodi' value='AbheriTodi' onClick={setSong} className='player'>Play <GiSpeaker/></button></td>
           </tr>
           <tr>
             <td>Abhogi</td>
             <td>Rajashri Mahajani</td>
             <td>-</td>
-            <td><button id='songBtn abhogi' value='song4' onClick={setSong} className='player'>Play <GiSpeaker/></button></td>
+            <td><button id='songBtn abhogi' value='Abhogi' onClick={setSong} className='player'>Play <GiSpeaker/></button></td>
           </tr>
           </tbody>
         </table>
