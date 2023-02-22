@@ -5,23 +5,26 @@ import IndexPage from './pages/IndexPage'
 import Header from './ComponentsIndex/Header/Header'
 import defaultSong from  '../src/Assets/songs/songs_Adbhutranjani_GoswamiGokulotsavmaharaj.mp3'
 import HomePage from './pages/HomePage';
+import { SongContext } from './context/SongContext';
 function App() {
-  const [src,setSrc] = useState(defaultSong)
-  let songName = src
-  return (
+  const [path,setPath] = useState(defaultSong)
+
+  return (  
+    <SongContext.Provider value ={{path,setPath}}>
     <div className='App'>
     <BrowserRouter>
-      <Header name={songName} />
+      <Header />
       <Routes>
         <Route path='/' element={
             <IndexPage 
           />} />
         <Route path='/home' element={
-            <HomePage src={src} setSrc={setSrc} />
+            <HomePage  />
           } />
       </Routes>
     </BrowserRouter>
     </div>
+    </SongContext.Provider>
   )
 }
 

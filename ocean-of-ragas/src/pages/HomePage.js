@@ -5,12 +5,12 @@ import Content from '../ComponentsHome/Content/Content'
 import Footer from '../ComponentsHome/Footer/Footer'
 import Nav from '../ComponentsHome/NavBar/Nav'
 
-function HomePage({src , setSrc}) {
+function HomePage() {
   return (
     <div className='App'>
       <About />
       <Nav />
-      <Content src={src} setSrc={setSrc} />
+      <Content />
       <Footer />
     </div>
   );

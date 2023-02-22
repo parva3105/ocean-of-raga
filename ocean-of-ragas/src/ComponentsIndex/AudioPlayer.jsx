@@ -1,30 +1,28 @@
-import React, {useState} from 'react';
-import defaultSong from '../Assets/songs/songs_Adbhutranjani_GoswamiGokulotsavmaharaj.mp3'
+import React, { useState, useEffect, useContext } from 'react';
+import ReactAudioPlayer from 'react-audio-player';
+import { SongContext } from '../context/SongContext';
+import { musicFiles } from './utils/songUtils';
 
-const AudioPlayer = ({path}) => {
 
-  const [pathName,setPathName] = useState(defaultSong)
 
-  console.log(pathName);
-  if(path !== defaultSong){
-    // setPathName(path.name)
-    console.log(path);
-  }
+const AudioPlayer = () => {
+  const { path } = useContext(SongContext);
+  const [audioSrc, setAudioSrc] = useState(path);
 
-  // const pathName = path //  This Works        
-  // const [pathName,setPathName] = useState(path) //  This Won't Works        
-  // console.log(path);
+  useEffect(() => {
+    setAudioSrc(musicFiles[path]);
+  }, [path]);
 
   return (
-    <div className='header__player'>
-        <div id='now-playing' className=" info header__audio">Now Playing : 5_Hindol.mp3  </div>
-            <div id='audio-tag' className="header__player__control">
-            <audio id='my-audio' autoPlay controls>
-                <source id='audio-source' src={pathName} type="audio/mp3"/>
-            </audio>
-        </div>
+    <div className="header__player">
+      <div id="now-playing" className="info header__audio">
+        Now Playing:                       
+      </div>
+      <div id="audio-tag" className="header__player__control">
+        <ReactAudioPlayer src={audioSrc} autoPlay controls />
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default AudioPlayer;

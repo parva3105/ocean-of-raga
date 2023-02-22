@@ -6,8 +6,7 @@ import { TfiYoutube } from 'react-icons/tfi'
 import AudioPlayer from '../AudioPlayer'
 
 
-const Header = (name) => {
-    let source = name;
+const Header = () => {
   return (
     <div>
         <div className="header__top">
@@ -18,7 +17,7 @@ const Header = (name) => {
                     <div className="info header__youtube"> <TfiYoutube /><a href='https://youtube.com' target="_blank">  See Demo On Youtube</a></div>
                 </div>
                 <div className="header__player">
-                    <AudioPlayer  path={source} />
+                    <AudioPlayer />
                 </div>
             </div>
         </div>
