@@ -1,4 +1,4 @@
-import React from 'react'
+import React  from 'react'
 import logo from '../../Assets/Images/logo.png'
 import group_intruments from '../../Assets/Images/group-insturments1.jpg'
 import './about.css'
@@ -35,7 +35,7 @@ const About = () => {
             </div>
         </div>
 
-        <button className='home__page'><Link to="/home">Click Here</Link></button>
+        <button className='home__page' id='play-button' ><Link to="/home">Click Here</Link></button>
 
 
     </div>

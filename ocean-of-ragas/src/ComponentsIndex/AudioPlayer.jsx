@@ -9,8 +9,20 @@ const AudioPlayer = () => {
   const { path } = useContext(SongContext);
   const [audioSrc, setAudioSrc] = useState(path);
   const [songName, setSongName] = useState('Adbhutranjani')
+  const [playing,setPlaying] = useState(true)
 
-  
+  console.log(playing);
+
+  useEffect(() => {
+    const playBtn = document.getElementById('play-button')
+    const audioPlayer = document.getElementById('audio-player')
+    playBtn.addEventListener('click' , () => {
+      audioPlayer.play();
+      setPlaying(true)
+    })  
+  } , )
+
+  console.log(playing);
 
   useEffect(() => {
     setAudioSrc(musicFiles[path])
@@ -24,7 +36,7 @@ const AudioPlayer = () => {
         Now Playing:  {songName}
       </div> &nbsp; &nbsp;&nbsp;&nbsp;
       <div id="audio-tag" className="header__player__control">
-        <ReactAudioPlayer src={audioSrc} autoPlay controls />
+      <ReactAudioPlayer src={audioSrc} autoPlay={playing} controls id="audio-player" />
       </div>
     </div>
   );
