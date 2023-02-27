@@ -16,10 +16,11 @@ const AudioPlayer = () => {
   useEffect(() => {
     const playBtn = document.getElementById('play-button')
     const audioPlayer = document.getElementById('audio-player')
+    if(playBtn){
     playBtn.addEventListener('click' , () => {
       audioPlayer.play();
       setPlaying(true)
-    })  
+    })  }
   } , )
 
   console.log(playing);
